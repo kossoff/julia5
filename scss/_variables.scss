@@ -4,9 +4,12 @@
  * SETTINGS" for documentation.
  */
 
-@import url(http://fonts.googleapis.com/css?family=Pinyon+Script);
+@import "../fonts/classica/classica.css";
+//@import url(http://fonts.googleapis.com/css?family=Pinyon+Script);
 
 $footer-height: 100px;
+
+$blue: #168DE2;
 
 // Font Families
 // ------------------------------------------------------
@@ -107,6 +110,8 @@ $default-float: left;
 // $alert-color: #c60f13;
 // $success-color: #5da423;
 
+$primary-color: $blue;
+
 // Make sure border radius matches unless we want it different.
 
 // $global-radius: 3px;
@@ -196,6 +201,7 @@ $default-float: left;
 // Control header font styles
 
 // $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-family: 'Classica One';
 // $header-font-weight: bold;
 // $header-font-style: normal;
 // $header-font-color: #222;
@@ -212,6 +218,11 @@ $default-float: left;
 // $h4-font-size: em-calc(23);
 // $h5-font-size: em-calc(18);
 // $h6-font-size: 1em;
+
+$h1-font-size: em-calc(37);
+$h2-font-size: em-calc(27);
+$h3-font-size: em-calc(23);
+$h4-font-size: em-calc(18);
 
 // Control how subheaders are styled.
 
@@ -1298,7 +1309,7 @@ $topbar-height: 75px;
 // $topbar-title-weight: bold;
 // $topbar-title-font-size: em-calc(17);
 $topbar-title-weight: normal;
-$topbar-title-font-size: em-calc(50);
+$topbar-title-font-size: em-calc(37);
 
 // Style the top bar dropdown elements
 
