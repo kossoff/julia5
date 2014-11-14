@@ -10,7 +10,7 @@
         <?php if ($top_bar_classes): ?>
         <div class="<?php print $top_bar_classes; ?>">
         <?php endif; ?>
-          <nav class="top-bar"<?php print $top_bar_options; ?>>
+          <nav class="top-bar" data-topbar <?php print $top_bar_options; ?>>
             <ul class="title-area">
               <li class="name"><h1><?php print $linked_site_name; ?></h1></li>
               <li class="toggle-topbar menu-icon"><a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
@@ -202,11 +202,10 @@
       </section>
       <!--/.footer-columns-->
     <?php endif; ?>
-
-    <!--.l-footer-->
   </div>
-<!--/.page -->
+  <!--/.page -->
 </div>
+<!--/.wrap -->
 
 <footer class="l-footer" role="contentinfo">
   <div class="row">
@@ -227,3 +226,4 @@
 <!--/.footer-->
 
 <?php if ($messages && $zurb_foundation_messages_modal): print $messages; endif; ?>
+

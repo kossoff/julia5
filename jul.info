@@ -1,5 +1,5 @@
-name = ZURB Foundation Sub-theme Julia
-description = Custom sub-theme based on the the Zurb Foundation base theme.
+name = Julia5
+description = ZURB Foundation Sub-theme Julia for vlasova-jul.com
 screenshot = images/screenshot.png
 
 core = 7.x
@@ -27,9 +27,9 @@ base theme = zurb_foundation
 ; CSS3 media queries: http://www.w3.org/TR/css3-mediaqueries/
 
 ; For CSS users, load the app.css file:
-;stylesheets[all][] = css/app.css
+stylesheets[all][] = css/app.css
 ; Comment the app.css file (above) if you're using sass to preprocess css:
-stylesheets[all][] = css/custom.css
+;stylesheets[all][] = css/STARTER.css
 
 ; Block loading of foundation.min.css from the base theme. This file should either
 ; not exist or be blank in your subtheme. See https://drupal.org/node/263967
@@ -39,7 +39,7 @@ stylesheets[all][] = css/foundation.min.css
 
 ; Modernizr acts as a shim for HTML5 elements for older browsers
 ; as well as detection for mobile devices.
-scripts[] = js/vendor/custom.modernizr.js
+scripts[] = js/vendor/modernizr.js
 
 ; Foundation framework scripts (minified).
 ; If you prefer to have more control over which components are included you
@@ -49,19 +49,19 @@ scripts[] = js/foundation.min.js
 ; Foundation framework scripts (uncompressed).
 ;scripts[] = js/foundation/foundation.js
 ;scripts[] = js/foundation/foundation.abide.js
-;scripts[] = js/foundation/foundation.alerts.js
+;scripts[] = js/foundation/foundation.accordion.js
+;scripts[] = js/foundation/foundation.alert.js
 ;scripts[] = js/foundation/foundation.clearing.js
-;scripts[] = js/foundation/foundation.cookie.js
 ;scripts[] = js/foundation/foundation.dropdown.js
-;scripts[] = js/foundation/foundation.forms.js
+;scripts[] = js/foundation/foundation.equalizer.js
 ;scripts[] = js/foundation/foundation.interchange.js
 ;scripts[] = js/foundation/foundation.joyride.js
 ;scripts[] = js/foundation/foundation.magellan.js
+;scripts[] = js/foundation/foundation.offcanvas.js
 ;scripts[] = js/foundation/foundation.orbit.js
-;scripts[] = js/foundation/foundation.placeholder.js
 ;scripts[] = js/foundation/foundation.reveal.js
-;scripts[] = js/foundation/foundation.section.js
-;scripts[] = js/foundation/foundation.tooltips.js
+;scripts[] = js/foundation/foundation.tab.js
+;scripts[] = js/foundation/foundation.tooltip.js
 ;scripts[] = js/foundation/foundation.topbar.js
 
 ; Theme scripts.
@@ -122,7 +122,7 @@ settings[zurb_foundation_top_bar_grid] = 1
 settings[zurb_foundation_top_bar_sticky] = 1
 settings[zurb_foundation_top_bar_menu_text] = 'Меню'
 settings[zurb_foundation_top_bar_custom_back_text] = 1
-settings[zurb_foundation_top_bar_back_text] = '< Назад'
+settings[zurb_foundation_top_bar_back_text] = 'Назад'
 settings[zurb_foundation_top_bar_is_hover] = 1
 settings[zurb_foundation_top_bar_scrolltop] = 1
 
