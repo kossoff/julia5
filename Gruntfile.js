@@ -39,6 +39,19 @@ module.exports = function(grunt) {
       }
     },
 
+    postcss: {
+      options: {
+        map: false,
+        processors: [
+          require('autoprefixer-core')({browsers:  ['last 2 versions', 'ie 8', 'ie 9']}).postcss,
+          require('csswring').postcss
+        ]
+      },
+      dist: {
+        src: 'css/*.css'
+      },
+    },
+
     watch: {
       grunt: { files: ['Gruntfile.js'] },
 
@@ -47,13 +60,14 @@ module.exports = function(grunt) {
         tasks: ['sass'],
         options: {
           livereload: true
-        }
-      }
+        },
+      },
     }
   });
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('build', ['sass', 'copy']);
