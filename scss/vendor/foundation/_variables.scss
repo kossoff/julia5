@@ -1,8 +1,3 @@
-@import "../fonts/classica/classica.css";
-
-$footer-height: 100px;
-$blue: #168DE2;
-
 //
 // FOUNDATION SETTINGS
 //
@@ -11,7 +6,7 @@ $blue: #168DE2;
 // $rem-base: 16px;
 
 // Allows the use of rem-calc() or lower-bound() in your settings
-@import "functions";
+// @import "functions";
 
 // $experimental: true;
 
@@ -62,8 +57,6 @@ $blue: #168DE2;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
-
-$primary-color: $blue;
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
@@ -128,7 +121,6 @@ $primary-color: $blue;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
 // $header-text-rendering: optimizeLegibility;
-$header-font-family: 'Classica One';
 
 // We use these to control header font sizes
 // $h1-font-size: rem-calc(44);
@@ -137,10 +129,6 @@ $header-font-family: 'Classica One';
 // $h4-font-size: rem-calc(23);
 // $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
-$h1-font-size: em-calc(37);
-$h2-font-size: em-calc(27);
-$h3-font-size: em-calc(23);
-$h4-font-size: em-calc(18);
 
 // These control how subheaders are styled.
 // $subheader-line-height: 1.4;
@@ -1137,19 +1125,14 @@ $h4-font-size: em-calc(18);
 // Background color for the top bar
 // $topbar-bg-color: #333;
 // $topbar-bg: $topbar-bg-color;
-$topbar-bg-color: #fff;
-$topbar-bg: $topbar-bg-color;
 
 // Height and margin
 // $topbar-height: 45px;
 // $topbar-margin-bottom: 0;
-$topbar-height: 75px;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: normal;
 // $topbar-title-font-size: rem-calc(17);
-$topbar-title-weight: normal;
-$topbar-title-font-size: rem-calc(37);
 
 // Style the top bar dropdown elements
 // $topbar-dropdown-bg: #333;
@@ -1159,9 +1142,6 @@ $topbar-title-font-size: rem-calc(37);
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: #fff;
 // $topbar-dropdown-toggle-alpha: 0.4;
-$topbar-dropdown-bg: #fff;
-$topbar-dropdown-link-color: #111;
-$topbar-dropdown-toggle-color: #111;
 
 // Set the link colors and styles for top-level nav
 // $topbar-link-color: #fff;
@@ -1175,14 +1155,6 @@ $topbar-dropdown-toggle-color: #111;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
-$topbar-link-color: #111;
-$topbar-link-color-hover: #111;
-$topbar-link-color-active: #111;
-$topbar-link-weight: bold;
-$topbar-link-font-size: em-calc(13);
-$topbar-link-hover-lightness: -30%; // Darken by 30%
-$topbar-link-bg-hover: darken($topbar-bg-color, 3%);
-$topbar-link-bg-active: darken($topbar-bg-color, 3%);
 
 // $topbar-button-font-size: 0.75rem;
 
@@ -1200,8 +1172,6 @@ $topbar-link-bg-active: darken($topbar-bg-color, 3%);
 // $topbar-menu-icon-color: #fff;
 // $topbar-menu-link-color-toggled: #888;
 // $topbar-menu-icon-color-toggled: #888;
-$topbar-menu-link-color: #111;
-$topbar-menu-icon-color: #111;
 
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;
