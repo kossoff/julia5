@@ -1,28 +1,21 @@
 // Non-modular or client styles for .l-header region.
 
-.l-header,
-.sticky {
-  margin-bottom: 15px;
-}
-
-.sticky {
-  border-bottom: 1px solid $blue;
-}
-
-// Top Bar
-//--------------------------------------------------
 .top-bar {
   .title-area {
-    h1 {
-      font-family: 'Classica One', cursive;
-
-      a {
-        padding-top: 20px;
+    .name {
+      h1  a {
+        color: lighten(red, 15%);
+        font-family: 'Cinzel Decorative', cursive;
+        font-size: 4rem;
+        margin-top:.5rem;
+        position:relative;
+        z-index:99;
       }
     }
   }
-}
 
-.top-bar-section {}
-.top-bar-section .left {}
-.top-bar-section .right {}
+  .top-bar-section {
+    position:relative;
+    z-index:100;
+  }
+}

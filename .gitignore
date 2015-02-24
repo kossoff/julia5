@@ -2,9 +2,6 @@
 humans.txt
 robots.txt
 .sass-cache
-*.sublime-*
-*.ruby-*
-*~
 node_modules
 .bin
 bower_components

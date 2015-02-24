@@ -32,15 +32,18 @@
 // You may comment out bourbon if you don't want to use its library of mixins.
 // The theme will have compilation errors if Foundation is not imported.
 
+// Global Zurb Foundation variable overrides.
+@import "base/init";
 // Global Zurb Foundation variables.
-@import "vendor/foundation/settings";
+@import "vendor/variables";
+// @import "vendor/settings";
 // Comment out this import if you don't want to use normalize.
-@import "vendor/foundation/normalize";
+@import "vendor/normalize";
 // Comment out this import below if you are customizing you imports below.
-@import "vendor/foundation/foundation";
+@import "vendor/foundation";
+
 // Comment out this import if you don't want to use Bourbon, a replacement for Compass mixins.
 // @import "bourbon";
-
 
 // Import our mixins early so they can be used by other partials.
 // Optional.
@@ -78,3 +81,57 @@
 
 // Older IE support
 // @import "vendor/ie";
+@import "../fonts/foundation-icons/foundation-icons.css";
+@import "../fonts/grands/grands.css";
+@import "../fonts/raleway/ralewayc.css";
+@import "http://webfonts.ru/import/cinzel.css";
+
+hr {
+  border: 0px none;
+  height: 1px;
+  opacity: 0.8;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  margin: 50px 0;
+}
+
+.large {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.copyright {
+  margin-top:90px;
+}
+
+.wide-orbit {
+  width:100%;
+
+  li img {
+    width:100%;
+    margin:0 auto;
+  }
+}
+
+.about img {
+  width: 250px;
+  height: 250px;
+  border-radius: 150px;
+}
+
+img.logo {
+  height:85px;
+  padding-top:.5rem;
+}
+
+h1#page-title {
+  @extend .text-center;
+}
+
+ul#field-gallery-photos {
+  li {
+    margin-bottom:.5rem;
+  }
+}
