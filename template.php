@@ -27,3 +27,16 @@ function julia5_links__topbar_main_menu($variables) {
 
   return '<ul' . drupal_attributes($variables['attributes']) . '>' . $output . '</ul>';
 }
+
+function julia5_form_alter(&$form, &$form_state, $form_id) {
+    // drupal_set_message('<pre>' . print_r($form, TRUE) . '</pre>');
+
+    // Your webform id goes here.
+    if ($form_id == 'webform_client_form_6') {
+      $form['actions']['submit']['#attributes']['class'] = array (
+        'button',
+        'radius',
+        'expand'
+        );
+    }
+}
