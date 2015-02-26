@@ -50,7 +50,12 @@
 <head>
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
+  <meta content="RU-MOW" name="geo.region">
+  <meta content="Moscow" name="geo.placename">
+  <meta name="geo.position" content="55.79;37.69" />
+  <meta name="icbm" content="55.79,37.69" />
   <?php print $styles; ?>
+  <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
   <?php print $scripts; ?>
   <!--[if !IE 7]>
     <style type="text/css">
