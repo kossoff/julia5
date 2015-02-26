@@ -61,7 +61,7 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
-<body class="<?php print $classes; ?>" <?php print $attributes;?>>
+<body class="<?php print $classes; ?>" <?php print $attributes;?> oncontextmenu="return false">
   <div class="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
@@ -73,6 +73,13 @@
     (function ($, Drupal, window, document, undefined) {
       $(document).foundation();
     })(jQuery, Drupal, this, this.document);
+
+    document.onmousedown = disableclick;
+    function disableclick ( event ) {
+      if ( event.button == 2 ) {
+        return false;
+      }
+    };
   </script>
 </body>
 </html>
