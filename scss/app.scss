@@ -130,8 +130,23 @@ h1#page-title {
   @extend .text-center;
 }
 
+.field-name-field-portfolio-section {
+  margin:1rem 0;
+}
+
 ul#field-gallery-photos {
+  margin-top:3rem;
+
   li {
     margin-bottom:.5rem;
+  }
+}
+
+.calendar-calendar .month-view .full td.single-day div.monthview, .calendar-calendar .week-view .full td.single-day div.weekview, .calendar-calendar .day-view .full td.single-day div.dayview {
+  background: none;
+
+  i {
+    color: $primary-color;
+    font-size:1.5rem;
   }
 }
