@@ -94,6 +94,7 @@ hr {
   background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
   background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
   background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  background-image: linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
   margin: 50px 0;
 }
 
@@ -126,19 +127,35 @@ img.logo {
   padding-top:.5rem;
 }
 
-h1#page-title {
-  @extend .text-center;
+h2, h3, h4, h5 {
+  a {
+    color: $oil;
+    border-bottom:1px dotted $primary-color;
+  }
 }
 
-.field-name-field-portfolio-section {
-  margin:1rem 0;
+h1#page-title {
+  @extend .text-center;
+
+  font-size:2rem;
+}
+
+h6.portfolio-section {
+  font-family:$font-family-sans-serif;
+  margin: 0;
 }
 
 ul#field-gallery-photos {
   margin-top:3rem;
 
   li {
-    margin-bottom:.5rem;
+    padding-bottom:.5rem;
+  }
+}
+
+.view-portfolio-sections {
+  .views-row {
+    margin-bottom:2rem;
   }
 }
 
