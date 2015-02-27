@@ -46,6 +46,6 @@
 ?>
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <?php foreach ($items as $delta => $item): ?>
-    <h6 class="text-center"><?php print render($item); ?></h6>
+    <h6 class="portfolio-section text-center"><?php print render($item); ?></h6>
   <?php endforeach; ?>
 </div>
