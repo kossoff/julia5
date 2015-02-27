@@ -11,7 +11,7 @@
         <?php endif; ?>
         <nav class="top-bar" data-topbar <?php print $top_bar_options; ?>>
           <ul class="title-area">
-            <li class="name"><h1><?php print $linked_site_name; ?></h1></li>
+            <li class="name"><h1 class="show-for-medium-up hide-for-portrait"><?php print $linked_site_name; ?></h1></li>
             <li class="toggle-topbar menu-icon">
               <a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
           </ul>
@@ -207,17 +207,17 @@
   <div class="row contact">
     <div class="large-12 columns">
       <h4>Контакты</h4>
-      <div class="large-4 columns">
+      <div class="medium-4 columns">
         <a href="mailto:me@vlasova-jul.com">
         <i class="icon-Email  large"></i><br>
         me@vlasova-jul.com</a>
       </div>
-      <div class="large-4 columns">
+      <div class="medium-4 columns">
         <a href="http://vk.com/lolijul">
         <i class="icon-VK large"></i><br>
         vk.com/lolijul</a>
       </div>
-      <div class="large-4 columns">
+      <div class="medium-4 columns">
         <a href="http://instagram.com/vlasovayilia/">
         <i class="fi-social-instagram large"></i><br>
         @vlasovayilia</a>
@@ -230,10 +230,10 @@
 
       <?php if ($site_name) : ?>
         <div class="row">
-          <div class="copyright large-6 columns">
+          <div class="copyright large-6 medium-7 small-12 columns">
             &copy; 2010 &mdash; <?php print date('Y') . ' ' . $site_name . ' ' . t('All rights reserved.'); ?>
           </div>
-          <div class="copyright large-6 columns">
+          <div class="copyright large-6 medium-5 small-12 columns">
             <div class="right">
               <i class="fi-wrench"></i>
               Разработка сайта:
