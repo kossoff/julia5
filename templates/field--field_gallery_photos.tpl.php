@@ -44,7 +44,7 @@
  * @ingroup themeable
  */
 ?>
-<ul id="field-gallery-photos" class="clearing-thumbs" data-clearing>
+<ul id="field-gallery-photos" class="clearing-thumbs small-block-grid-1" data-clearing>
   <?php foreach ($items as $delta => $item): ?>
     <li><?php print render($item); ?></li>
   <?php endforeach; ?>
