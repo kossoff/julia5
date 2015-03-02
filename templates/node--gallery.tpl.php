@@ -88,6 +88,9 @@
     <h1 id="page-title" class="title"><?php print $title; ?></h1>
   <?php endif; ?>
   <?php print render($title_suffix); ?>
+  <p class="text-center">
+    <a href="//ru.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-color="white"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_white_20.png" /></a>
+  </p>
 
   <?php
     // We hide the comments and links now so that we can render them later.
