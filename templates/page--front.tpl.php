@@ -207,21 +207,27 @@
   <div class="row contact">
     <div class="large-12 columns">
       <h4>Контакты</h4>
-      <div class="medium-4 columns">
+      <div class="medium-3 columns">
         <a href="mailto:me@vlasova-jul.com">
         <i class="icon-Email  large"></i><br>
         me@vlasova-jul.com</a>
       </div>
-      <div class="medium-4 columns">
+      <div class="medium-3 columns">
         <a href="http://vk.com/lolijul">
         <i class="icon-VK large"></i><br>
         vk.com/lolijul</a>
       </div>
-      <div class="medium-4 columns">
+      <div class="medium-3 columns">
         <a href="http://instagram.com/vlasovayilia/">
         <i class="fi-social-instagram large"></i><br>
         @vlasovayilia</a>
       </div>
+      <div class="medium-3 columns">
+        <a href="tel:+79265621275">
+        <i class="fi-telephone large"></i><br>
+        +7 (926) 562-12-75</a>
+      </div>
+    </div>
       <?php if (!empty($page['footer'])): ?>
         <div class="footer columns">
           <?php print render($page['footer']); ?>
@@ -243,6 +249,5 @@
         </div>
       <?php endif; ?>
     </div>
-  </div>
 </footer>
 <!--/.l-footer -->
