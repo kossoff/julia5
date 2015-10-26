@@ -208,9 +208,9 @@
     <div class="large-12 columns">
       <h4>Контакты</h4>
       <div class="medium-3 columns">
-        <a href="mailto:me@vlasova-jul.com">
+        <a href="mailto:me@tizengauz.com">
         <i class="icon-Email  large"></i><br>
-        me@vlasova-jul.com</a>
+        me@tizengauz.com</a>
       </div>
       <div class="medium-3 columns">
         <a href="http://vk.com/lolijul">
@@ -218,9 +218,9 @@
         vk.com/lolijul</a>
       </div>
       <div class="medium-3 columns">
-        <a href="http://instagram.com/vlasovayilia/">
+        <a href="http://instagram.com/tizengauz_julia/">
         <i class="fi-social-instagram large"></i><br>
-        @vlasovayilia</a>
+        @tizengauz_julia</a>
       </div>
       <div class="medium-3 columns">
         <a href="tel:+79265621275">
