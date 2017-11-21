@@ -42,11 +42,7 @@
  */
 ?>
 <!DOCTYPE html>
-<!-- Sorry no IE7 support! -->
-<!-- @see http://foundation.zurb.com/docs/index.html#basicHTMLMarkup -->
-
-<!--[if IE 8]><html class="no-js lt-ie9" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>"> <!--<![endif]-->
+<html  lang="ru">
 <head>
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
@@ -58,14 +54,6 @@
   <link href='//fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
   <link href='//fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
   <?php print $scripts; ?>
-  <!--[if !IE 7]>
-    <style type="text/css">
-      .page {display:table;height:100%}
-    </style>
-  <![endif]-->
-  <!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?> oncontextmenu="return false">
   <div class="skip-link">

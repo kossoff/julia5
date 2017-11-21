@@ -1,120 +1,175 @@
-/* @file
- * This file is a custom file that loads all files. Each non-base layer
- * can be disabled.
- *
- * Do not name this file "STARTER.scss". This file should be named
- * THEMENAME.scss. If you used the drush command to generate this subtheme,
- * it should be named for you.
- *
- * This application file (THEMENAME.scss) is where all the partials are
- * imported.
- *
- * Theme styles are categorized using SMACSS standards. They utilize
- * categorization of styles into various categories. Those categories are the
- * following:
- *
- * - Base: CSS reset/normalize plus HTML element styling.
- * - Layout: Macro arrangement of a web page, including any grid systems.
- * - Modules: Dictate minor layout modules or reusable elements.
- * - States: Describe the appearance of a module in various states.
- * - Theme: Specific customizations for your subtheme.
- * For more information about this new Drupal css file standard, please review
- * the following:
- * - https://drupal.org/node/1887922
- * - http://smacss.com/
- */
+@charset 'utf-8';
 
-// Make sure the charset is set appropriately
-@charset "UTF-8";
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
 
-// Core
-// The following imports bootstrap the theme.
-// You may comment out bourbon if you don't want to use its library of mixins.
-// The theme will have compilation errors if Foundation is not imported.
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+// @include foundation-xy-grid-classes;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+// @include foundation-accordion;
+// @include foundation-accordion-menu;
+// @include foundation-badge;
+// @include foundation-breadcrumbs;
+@include foundation-button-group;
+// @include foundation-callout;
+// @include foundation-card;
+// @include foundation-close-button;
+@include foundation-menu;
+// @include foundation-menu-icon;
+// @include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+// @include foundation-off-canvas;
+// @include foundation-orbit;
+// @include foundation-pagination;
+// @include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+// @include foundation-slider;
+// @include foundation-sticky;
+// @include foundation-reveal;
+// @include foundation-switch;
+// @include foundation-table;
+// @include foundation-tabs;
+@include foundation-thumbnail;
+// @include foundation-title-bar;
+// @include foundation-tooltip;
+// @include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-flex-classes;
 
-// Global Zurb Foundation variable overrides.
-@import "base/init";
-// Comment out this import if you don't want to use normalize.
-@import "../../zurb_foundation/scss/normalize";
+// @include foundation-prototype-classes;
 
-// Comment out the imports you don't need below.
-@import "../../zurb_foundation/scss/foundation/components/grid";
-// @import "../../zurb_foundation/scss/foundation/components/accordion";
-@import "../../zurb_foundation/scss/foundation/components/alert-boxes";
-@import "../../zurb_foundation/scss/foundation/components/block-grid";
-// @import "../../zurb_foundation/scss/foundation/components/breadcrumbs";
-// @import "../../zurb_foundation/scss/foundation/components/button-groups";
-@import "../../zurb_foundation/scss/foundation/components/buttons";
-@import "../../zurb_foundation/scss/foundation/components/clearing";
-// @import "../../zurb_foundation/scss/foundation/components/dropdown";
-// @import "../../zurb_foundation/scss/foundation/components/dropdown-buttons";
-// @import "../../zurb_foundation/scss/foundation/components/flex-video";
-@import "../../zurb_foundation/scss/foundation/components/forms";
-// @import "../../zurb_foundation/scss/foundation/components/icon-bar";
-@import "../../zurb_foundation/scss/foundation/components/inline-lists";
-// @import "../../zurb_foundation/scss/foundation/components/joyride";
-// @import "../../zurb_foundation/scss/foundation/components/keystrokes";
-// @import "../../zurb_foundation/scss/foundation/components/labels";
-// @import "../../zurb_foundation/scss/foundation/components/magellan";
-@import "../../zurb_foundation/scss/foundation/components/orbit";
-@import "../../zurb_foundation/scss/foundation/components/pagination";
-// @import "../../zurb_foundation/scss/foundation/components/panels";
-// @import "../../zurb_foundation/scss/foundation/components/pricing-tables";
-// @import "../../zurb_foundation/scss/foundation/components/progress-bars";
-// @import "../../zurb_foundation/scss/foundation/components/range-slider";
-// @import "../../zurb_foundation/scss/foundation/components/reveal";
-// @import "../../zurb_foundation/scss/foundation/components/side-nav";
-// @import "../../zurb_foundation/scss/foundation/components/split-buttons";
-// @import "../../zurb_foundation/scss/foundation/components/sub-nav";
-// @import "../../zurb_foundation/scss/foundation/components/switches";
-@import "../../zurb_foundation/scss/foundation/components/tables";
-// @import "../../zurb_foundation/scss/foundation/components/tabs";
-@import "../../zurb_foundation/scss/foundation/components/thumbs";
-// @import "../../zurb_foundation/scss/foundation/components/tooltips";
-@import "../../zurb_foundation/scss/foundation/components/top-bar";
-@import "../../zurb_foundation/scss/foundation/components/type";
-// @import "../../zurb_foundation/scss/foundation/components/offcanvas";
-@import "../../zurb_foundation/scss/foundation/components/visibility";
+@include motion-ui-transitions;
+@include motion-ui-animations;
 
-// Import our mixins early so they can be used by other partials.
-// Optional.
-//@import "base/mixins";
-
-// Common file is where you place common utility classes to extend or
-// parametrics.
-// Optional.
-// @import "base/common";
-
-// Fix for some Drupal CSS quirks (Drupalisms).
-@import "base/drupal";
-
-// Styling for elements.
-// Optional.
-// @import "base/elements";
-
-// Layout
-// Each section of the document has it's own partial seperated out to improve
-// developer experience. Additionally, grids can be declared in layouts as well.
-@import "layout/header";
-@import "layout/main";
-@import "layout/aside";
-@import "layout/footer";
-
-// Modules
-// @import "modules/block";
-// @import "modules/button";
-
-// States
-// @import "states/collapse";
-
-// Themes
-// @import "theme/button-light";
-
-// Older IE support
-// @import "vendor/ie";
 @import "../fonts/foundation-icons/foundation-icons.css";
 @import "../fonts/grands/grands.css";
 @import "../fonts/raleway/ralewayc.css";
+
+// Drupal comes with CSS quirks (Drupalisms). Unravel or override them here.
+
+// Make the "sticky" Top Bar play nice with the "fixed" Admin Menu.
+.admin-menu .fixed {
+  top: emCalc(29px);
+}
+
+// Remove the bottom padding on status messages when displayed inside a Zurb
+// Foundation Reveal modal.
+#status-messages.reveal-modal {
+  .alert-box {
+    margin-bottom: 0;
+  }
+}
+
+// Fix Zurb Foundation Reveal Modal z-index and make it play nice with dropdown
+// menus, lightboxes, etc.
+.reveal-modal {
+  z-index: 999;
+}
+
+// Override Drupal Core pager styles. This is necessary because we need to keep
+// the .pager class on pagers for Views AJAX to work. If you are disabling
+// Drupal Core CSS you can safely comment the following lines.
+.item-list .pager {
+  clear: none;
+}
+
+.item-list .pager li {
+  padding: 0;
+}
+
+// Allow drupal inline elements to mixin Foundation inline properties
+.inline {
+  @extent .inline-list;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+.top-bar {
+  .title-area {
+    .name {
+      h1  a {
+        color: lighten(red, 15%);
+        font-family: 'Great Vibes', cursive;
+        font-size: 4rem;
+        padding-top:1rem;
+        position:relative;
+        z-index:99;
+      }
+    }
+  }
+
+  .top-bar-section {
+    position:relative;
+    z-index:100;
+  }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+$footer-height: 200px + 90px +100px;
+
+/*
+Sticky Footer Solution
+by Steve Hatcher
+http://stever.ca
+http://www.cssstickyfooter.com
+*/
+
+* {
+  margin:0;
+  padding:0;
+}
+
+/* must declare 0 margins on everything, also for main layout components use padding, not
+vertical margins (top and bottom) to add spacing, else those margins get added to total height
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+html, body {
+  height: 100%;
+}
+
+.page {
+  min-height: 100%;
+}
+
+.wrap-main {
+  overflow:auto;
+  padding-bottom: $footer-height;
+}  /* must be same height as the footer */
+
+footer {
+  position: relative;
+  margin-top: -($footer-height); /* negative value of footer height */
+  height: $footer-height;
+  clear:both;
+}
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+  content:"";
+  height:100%;
+  float:left;
+  width:0;
+  margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
 
 hr {
   border: 0px none;
@@ -161,13 +216,14 @@ h2, h3, h4, h5 {
 }
 
 h1#page-title {
-  @extend .text-center;
+  @extend .text-center !optional;
 
   font-size:2rem;
 }
 
 h6.portfolio-section {
-  font-family:$font-family-sans-serif;
+  // font-family:$font-family-sans-serif;
+  font-family: $body-font-family;
   margin: 0;
 }
 
@@ -191,5 +247,35 @@ ul#field-gallery-photos {
   i {
     color: $primary-color;
     font-size:1.5rem;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+ul.button-group {
+  list-style-type: none;
+  margin: 0;
+}
+
+header {
+  #logo {
+    margin: 0 1.5rem;
+  }
+
+  #main-menu {
+    margin-bottom: 2rem;
+  }
+}
+
+.view-portfolio-sections {
+  h4 {
+    margin-bottom: 1.5rem;
+  }
+
+  .view-gal-in-port {
+    margin-bottom: 2rem;
   }
 }
